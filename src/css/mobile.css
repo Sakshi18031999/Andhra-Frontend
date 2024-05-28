@@ -1,0 +1,83 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #b40b0e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: block;
+}
+
+.menu-options {
+  position: absolute;
+  top: calc(100% + 10px); /* Position below the header */
+  left: 0;
+  width: 100%;
+  background-color: #b40b0e;
+}
+
+.menu-options ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile-text {
+  font-size: 25px;
+}
+.menu-options li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "shreyas";
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.menu-options li:hover {
+  background-color: #ee5656;
+}
+
+.dropdown {
+  display: none;
+  width: 90%;
+  text-align: center;
+}
+
+.dropdown-element {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  text-align: center;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #b40b0e; /* Match your navbar background color */
+}
+
+.menu-options li:hover .dropdown,
+.menu-options li:focus-within .dropdown {
+  /* Added focus-within to support click events */
+  display: block;
+}
+
+.dropdown-element:hover {
+  background-color: #ee5656;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-options li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "shreyas";
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+}

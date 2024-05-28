@@ -1,0 +1,393 @@
+.navbar {
+  background-color: #b40b0e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 81px;
+  position: sticky;
+}
+
+@font-face {
+  font-family: "shreyas";
+  font-family: "shreyas";
+  src: url("../assets/fonts/Pragathi.ttf") format("truetype");
+}
+.navbar-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-nav ul li {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "shreyas";
+  font-weight: 700;
+  position: relative;
+}
+.logo-image2{
+  display: none;
+}
+.navbar-nav {
+  width: 1000px;
+}
+.navbar-nav ul li:hover ul {
+  display: block;
+}
+.dropdown {
+  width: 300px;
+}
+.navbar-nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: red;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav ul li ul li {
+  margin-right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav ul li ul li:hover {
+  background-color: #213875;
+}
+
+.sliding-banner-container {
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+}
+.banner-container {
+  position: relative;
+}
+
+.counter7 {
+  color: #ffffff;
+  font-family: "shreyas";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 101.65px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 60%; /* Adjust as needed */
+  right: 27%; /* Adjust as needed */
+  z-index: 10;
+}
+
+.yes-button {
+  position: absolute;
+  top: 48%; /* Adjust as needed */
+  right: 33%; /* Adjust as needed */
+  z-index: 10; /* Ensure it's above the banner */
+  background: linear-gradient(to bottom, #fdd433, #feb33a);
+  color: #510205;
+}
+
+.banner-image {
+  width: 100%;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.banner-image {
+  height: 600px;
+}
+.banner-image.active {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1800px) {
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 60%; /* Adjust as needed */
+    right: 24%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 30%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 60%; /* Adjust as needed */
+    right: 21%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 27%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+@media only screen and (max-width: 1500px) {
+}
+@media only screen and (max-width: 1400px) {
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 60%; /* Adjust as needed */
+    right: 18%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 24%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+@media only screen and (max-width: 1300px) {
+}
+@media only screen and (max-width: 1200px) {
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 60%; /* Adjust as needed */
+    right: 15%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 21%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 60%; /* Adjust as needed */
+    right: 12%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 18%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .banner-image {
+    height: 500px;
+  }
+  .sliding-banner-container {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .banner-image {
+    height: 400px;
+  }
+  .sliding-banner-container {
+    height: 400px;
+  }
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 62%; /* Adjust as needed */
+    right: 11%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 17%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 62%; /* Adjust as needed */
+    right: 6%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 12%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-image {
+    height: 300px;
+  }
+  .sliding-banner-container {
+    height: 300px;
+  }
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 62%; /* Adjust as needed */
+    right: 11%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 5%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner-image {
+    height: 300px;
+  }
+  .sliding-banner-container {
+    height: 300px;
+  }
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 62%; /* Adjust as needed */
+    right: 13%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 3%; /* Adjust as needed */
+    font-size: 14px;
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .banner-image {
+    height: 200px;
+  }
+  .sliding-banner-container {
+    height: 200px;
+  }
+  .counter7 {
+    color: #ffffff;
+    font-family: "shreyas";
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 101.65px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 62%; /* Adjust as needed */
+    right: 18%; /* Adjust as needed */
+    z-index: 10;
+  }
+
+  .yes-button {
+    position: absolute;
+    top: 48%; /* Adjust as needed */
+    right: 8%; /* Adjust as needed */
+    font-size: 10px;
+    z-index: 10; /* Ensure it's above the banner */
+    background: linear-gradient(to bottom, #fdd433, #feb33a);
+    color: #510205;
+  }
+}

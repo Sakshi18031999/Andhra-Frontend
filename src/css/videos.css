@@ -1,0 +1,227 @@
+.main-div {
+  background-image: url(https://www.tdpguarantee2024.com/assets/images/body-bg.webp);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guarantees {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+}
+.guarantee-card {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  margin: 20px;
+  perspective: 1000px;
+}
+
+.guarantee-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.guarantee-card:hover .guarantee-card-inner {
+  transform: rotateY(180deg);
+}
+
+.guarantee-card-front,
+.guarantee-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.guarantee-card-front {
+  background-color: white;
+}
+
+.guarantee-card-back {
+  transform: rotateY(180deg);
+  background-color: white;
+}
+
+.guarantee-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub-text {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #0b0b0c;
+  line-height: 40px;
+  padding: 0 200px;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.exit-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.exit-button:hover {
+  color: #000;
+}
+.head-image{
+  width: 1600px;
+  height: 150px;
+}
+.popup img {
+  width: 100%;
+  max-height: 80vh;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+.exit-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.emoji-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  pointer-events: none; /* Allows clicks to pass through the emojis */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.falling-emoji {
+  animation: fallAnimation 5s linear infinite ;
+  margin: 10px; /* Adjust the margin to spread out the emojis */
+}
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(-100px) scale(0.5); /* Initial position and size */
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5); /* Final position off-screen */
+  }
+}
+
+
+
+@media only screen and (max-width: 1610px) {
+  .head-image{
+    width: 1400px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 1430px) {
+  .head-image{
+    width: 1200px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .head-image{
+    width: 1000px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .head-image{
+    width: 800px;
+    height: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 1270px) {
+  .guarantees {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+  }
+}
+
+
+
+@media only screen and (max-width: 840px) {
+  .guarantees {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+  .sub-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #0b0b0c;
+    line-height: 40px;
+    padding: 0 70px;
+  }
+  .head-image{
+    width: 600px;
+    height: 150px;
+  }
+  .popup img {
+    width: 300px;
+    max-height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .head-image{
+    width: 400px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .head-image{
+    width: 300px;
+    height: 60px;
+  }
+  .guarantee-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    perspective: 1000px;
+  }
+}
