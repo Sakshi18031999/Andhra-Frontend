@@ -98,7 +98,7 @@ const MainComponent = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://16.170.218.111:5000/api/records/count"
+          "http://16.171.12.213:5000/api/records/count"
         );
         const totalCount = response.data.count;
         setYesCount(totalCount);
@@ -132,7 +132,7 @@ const MainComponent = () => {
   const handleYesClick = () => {
     setYesClicked(true);
     axios
-      .post("http://16.170.218.111:5000/api/records/create", { response: "yes" })
+      .post("http://16.171.12.213:5000/api/records/create", { response: "yes" })
       .then(() => {
         setYesCount((prevCount) => prevCount + 1);
         startRollingAnimation(rollingNumber, yesCount + 1 + 15708);
