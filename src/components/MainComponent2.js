@@ -127,7 +127,7 @@ const MainComponent2 = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://16.171.12.213:5000/api/records/count"
+          "http://13.53.40.248:5000/api/records/count"
         );
         const totalCount = response.data.count;
         setYesCount(totalCount);
@@ -161,7 +161,7 @@ const MainComponent2 = () => {
   const handleYesClick = () => {
     setYesClicked(true);
     axios
-      .post("http://16.171.12.213:5000/api/records/create", {
+      .post("http://13.53.40.248:5000/api/records/create", {
         response: "yes",
       })
       .then(() => {
